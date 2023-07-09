@@ -44,6 +44,7 @@ const BLOG = {
   ],
   FONT_SANS: [
     // 无衬线字体 例如'LXGW WenKai'
+    'sans-serif',
     'Bitter',
     '"PingFang SC"',
     '-apple-system',
@@ -59,7 +60,6 @@ const BLOG = {
     'Helvetica',
     '"Source Han Sans SC"',
     'Arial',
-    'sans-serif',
     '"Apple Color Emoji"'
   ],
   FONT_SERIF: [
