@@ -20,11 +20,11 @@ export const Header = (props) => {
                     {/* 可使用一张单图作为logo */}
                     <div className='flex space-x-6'>
                         <div className='hover:rotate-45 hover:scale-125 transform duration-200 cursor-pointer'>
-                            <LazyImage src={avatar} className='rounded-full' width={130} height={130} alt={BLOG.AUTHOR} />
+                            <LazyImage src={avatar} className='rounded-full' width={130} height={130} alt={BLOG.TITLE_AUTHOR} />
                         </div>
 
                         <div className='flex-col flex justify-center'>
-                            <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200'>{BLOG.AUTHOR}</div>
+                            <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200'>{BLOG.TITLE_AUTHOR}</div>
                             <div className='font-light dark:text-white py-2 hover:scale-105 transform duration-200 text-center' dangerouslySetInnerHTML={{ __html: CONFIG.LOGO_DESCRIPTION }} />
                         </div>
                     </div>
