@@ -17,7 +17,7 @@ const BLOG = {
 
   CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || true, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
 
-  TITLE_AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Junrong Lin (Julian)'
+  TITLE_AUTHOR: process.env.NEXT_TITLE_AUTHOR || 'Junrong Lin (Julian)', // Author name in title/head, now only configed for simple/plog
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Junrong Lin', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || '🍚', // 作者简介
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://junronglin.com', // 网站地址

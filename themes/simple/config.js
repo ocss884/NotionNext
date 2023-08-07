@@ -5,7 +5,7 @@ const CONFIG = {
   TOP_BAR_CONTENT: process.env.NEXT_PUBLIC_THEME_SIMPLE_TOP_TIPS || '',
   LOGO_DESCRIPTION: process.env.NEXT_PUBLIC_THEME_SIMPLE_LOGO_DESCRIPTION || '<div></div>',
 
-  AUTHOR_LINK: process.env.NEXT_PUBLIC_AUTHOR_LINK || 'Junrong Lin (Julian)',
+  AUTHOR_LINK: process.env.NEXT_PUBLIC_AUTHOR_LINK || '#',
 
   // 菜单配置
   MENU_CATEGORY: true, // 显示分类
