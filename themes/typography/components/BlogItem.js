@@ -10,7 +10,7 @@ import CONFIG from '../config'
 
 export const BlogItem = props => {
   const { post } = props
-  const { NOTION_CONFIG } = useGlobal()
+  const { NOTION_CONFIG, locale } = useGlobal()
   const showPageCover = siteConfig('TYPOGRAPHY_POST_COVER_ENABLE', false, CONFIG)
   const showPreview =
     siteConfig('POST_LIST_PREVIEW', false, NOTION_CONFIG) && post.blockMap
@@ -49,7 +49,7 @@ export const BlogItem = props => {
           <header className='text-md text-[var(--primary-color)] dark:text-gray-300 flex-wrap flex items-center leading-6'>
             <div className='space-x-2'>
               <span className='text-sm'>
-                发布于
+                {locale.COMMON.POST_TIME}
                 <SmartLink
                   className='p-1 hover:text-red-400 transition-all duration-200'
                   href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}>
