@@ -1,7 +1,7 @@
 ARG NOTION_PAGE_ID
 ARG NEXT_PUBLIC_THEME
 
-FROM node:20-alpine AS base
+FROM node:22-alpine AS base
 
 # 1. Install dependencies only when needed
 FROM base AS deps
@@ -36,7 +36,7 @@ COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 
 # 个人仓库把将配置好的.env.local文件放到项目根目录，可自动使用环境变量
-# COPY --from=builder /app/.env.local ./
+COPY --from=builder /app/.env.local ./
 
 EXPOSE 3000
 
